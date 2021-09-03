@@ -20,7 +20,8 @@ if (builder.Environment.IsDevelopment())
     app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "CommandsService v1"));
 }
 
-app.UseHttpsRedirection();
+// to avoid https redirection error
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

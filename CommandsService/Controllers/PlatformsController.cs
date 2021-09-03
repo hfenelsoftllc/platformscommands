@@ -22,6 +22,7 @@ namespace CommandsService.Controllers
         public ActionResult TestInboundConnection()
         {
             Console.WriteLine("--> Inbound POST # Command Service");
+            
             return Ok("Inbound test of from Platform Controller");
         }
     }
